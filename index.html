@@ -38,6 +38,9 @@
 [hidden]{display:none!important}
 html,body{height:100%}
 body{background:var(--night);color:var(--ink);font-family:var(--f-body);overflow:hidden;-webkit-tap-highlight-color:transparent}
+/* 長押しで文字選択やコピーのメニューを出さない（共有画像だけは長押しで保存できるように残す） */
+html,body,*{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+#shareImg{-webkit-touch-callout:default;-webkit-user-select:auto;user-select:auto}
 button{font:inherit;color:inherit;cursor:pointer;touch-action:manipulation}
 button:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 #app{height:100%;display:flex;flex-direction:column}
@@ -1109,6 +1112,8 @@ function frame(now){
   requestAnimationFrame(frame);
 }
 resize();toTitle();requestAnimationFrame(frame);
+document.addEventListener('contextmenu',e=>{if(e.target.id!=='shareImg')e.preventDefault()});
+document.addEventListener('selectstart',e=>e.preventDefault());
 /* 看板の店名などキャンバスに描く文字も、先に書体を読み込んでおく */
 if(document.fonts&&document.fonts.load){const t=Object.values(TYPES).map(t=>t.name).join('')+'ケーキ予約受付中限定本日の営業は終了しました';['500 24px "Kiwi Maru"','700 15px "Zen Kaku Gothic New"','500 10px "Zen Kaku Gothic New"'].forEach(f=>document.fonts.load(f,t+'0123456789').catch(()=>{}))}
 })();
