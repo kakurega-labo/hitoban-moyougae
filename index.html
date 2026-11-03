@@ -45,7 +45,7 @@ button:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 /* 上の帯 */
 #hud{display:flex;align-items:center;gap:8px;padding-block:8px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));background:var(--panel);border-bottom:1px solid var(--line);min-height:52px}
 #clockBox{display:flex;flex-direction:column;gap:3px;min-width:0}
-#clock{font-family:var(--f-num);font-weight:700;font-size:20px;letter-spacing:.02em;font-variant-numeric:tabular-nums;line-height:1;white-space:nowrap}
+#clock{font-family:var(--f-body);font-weight:700;font-size:20px;letter-spacing:.02em;font-variant-numeric:tabular-nums;line-height:1;white-space:nowrap}
 #clock.warn{color:var(--pumpkin)}
 #nightBar{width:104px;height:4px;border-radius:2px;background:rgba(255,255,255,.12);overflow:hidden}
 #nightFill{height:100%;width:0;background:linear-gradient(90deg,#6B78B8,var(--gold))}
@@ -82,7 +82,7 @@ button:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 .ov{position:absolute;inset:0;z-index:20;display:flex;overflow:auto;padding-block:20px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
 #title{background:linear-gradient(180deg,rgba(10,14,28,.1),rgba(10,14,28,.65) 45%,rgba(10,14,28,.9));align-items:flex-end}
 .tcol{width:100%;max-width:480px;margin:0 auto;display:flex;flex-direction:column;gap:14px}
-.eyebrow{font-family:var(--f-num);font-size:12px;letter-spacing:.12em;color:var(--gold)}
+.eyebrow{font-family:var(--f-body);font-weight:700;font-size:12px;letter-spacing:.12em;color:var(--gold)}
 #title h1{font-family:var(--f-disp);font-weight:500;font-size:clamp(34px,9vw,48px);line-height:1.1;margin:0;text-wrap:balance}
 #title h1 em{font-style:normal;color:var(--pumpkin)}
 .lead{margin:0;color:var(--muted);font-size:14px;line-height:1.7}
@@ -98,7 +98,7 @@ button:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 .sizes .back{background:transparent;border:1px solid var(--line);border-radius:10px;color:var(--ink);font-size:14px;padding:10px 12px;text-align:center}
 .size{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:12px;text-align:left;border-radius:12px;padding:10px 12px;border:1px solid var(--line);background:var(--panel2)}
 .size .n{font-family:var(--f-num);font-weight:700;font-size:26px;line-height:1}
-.size .n small{font-size:12px;margin-left:2px}
+.size .n small{font-size:12px;margin-left:2px;font-family:var(--f-body)}
 .size .t{display:flex;flex-direction:column;gap:2px;min-width:0}
 .size .t b{font-family:var(--f-disp);font-weight:500;font-size:16px}
 .size .t span{font-size:12px;color:var(--muted)}
@@ -116,7 +116,7 @@ button:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 #docs{background:rgba(10,14,28,.45)}
 .paper{width:100%;max-width:480px;margin:auto;background:var(--paper);color:var(--paperInk);border-radius:6px;padding:20px 18px;box-shadow:0 18px 40px rgba(0,0,0,.45);display:flex;flex-direction:column;gap:12px;position:relative}
 .paper h2{font-family:var(--f-disp);font-weight:500;font-size:22px;margin:0}
-.paper .sub{font-family:var(--f-num);font-size:11px;letter-spacing:.1em;color:#7A6F62}
+.paper .sub{font-family:var(--f-body);font-size:12px;letter-spacing:.08em;color:#7A6F62}
 .pbtn{background:var(--paperInk);color:var(--paper);border:0;border-radius:8px;padding:11px 14px;font-weight:700;font-size:15px}
 .pbtn.ghost{background:transparent;color:var(--paperInk);border:1.5px solid var(--paperInk)}
 .row2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
@@ -132,7 +132,7 @@ a.pbtn{text-align:center;text-decoration:none;display:block}
 .tabs button{flex:1 0 auto;min-width:58px;background:#E6DCC6;color:#5E554B;border:0;border-radius:6px 6px 0 0;padding:7px 4px;font-size:12px;font-weight:700;white-space:nowrap}
 .tabs button.on{background:var(--paper);color:#8E2A24}
 .sheet{background:var(--paper);color:var(--paperInk);border-radius:0 0 6px 6px;padding:18px 18px 16px;display:flex;flex-direction:column;gap:10px;min-height:250px;background-image:repeating-linear-gradient(180deg,transparent 0 27px,rgba(42,38,34,.08) 27px 28px);position:relative}
-.sheet .who{font-family:var(--f-num);font-size:11px;letter-spacing:.08em;color:#7A6F62}
+.sheet .who{font-family:var(--f-body);font-size:11px;letter-spacing:.08em;color:#7A6F62}
 .sheet h3{margin:0;font-family:var(--f-disp);font-weight:500;font-size:22px}
 .sheet .note{margin:0;font-family:var(--f-disp);font-size:17px;line-height:1.65;color:#2F3A5A}
 .sheet .stamp{position:absolute;right:14px;top:14px;border:2px solid #C0392B;color:#C0392B;font-family:var(--f-disp);font-size:13px;padding:2px 7px;border-radius:4px;transform:rotate(8deg)}
@@ -148,7 +148,7 @@ a.pbtn{text-align:center;text-decoration:none;display:block}
 .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
 .stats div{background:rgba(42,38,34,.06);border-radius:6px;padding:8px;display:flex;flex-direction:column;gap:2px;min-width:0}
 .stats span{font-size:11px;color:#7A6F62}
-.stats b{font-family:var(--f-num);font-size:18px;font-variant-numeric:tabular-nums}
+.stats b{font-family:var(--f-body);font-weight:700;font-size:18px;font-variant-numeric:tabular-nums}
 .shopRows{margin:0;padding:0;list-style:none}
 .shopRows li{display:grid;grid-template-columns:22px 1fr;gap:2px 8px;padding:7px 0;border-top:1px dashed rgba(42,38,34,.22);font-size:13px;line-height:1.5}
 .shopRows .mk{grid-row:span 3;font-weight:700;font-size:16px;text-align:center}
@@ -862,6 +862,7 @@ function startMorning(){
   endClock=mode==='rush'?1-Math.max(0,timeLeft)/T:null;
   state='morning';selItem=null;refreshShelf();$('#docs').hidden=true;$('#shelf').hidden=true;$('#btnSkip').hidden=false;
   const res=street.map((_,i)=>judgeShop(i));
+  if(document.fonts&&document.fonts.load)document.fonts.load('700 15px "Zen Kaku Gothic New"',res.flatMap(r=>r.lines.map(l=>l.say)).join('')).catch(()=>{});
   morning={t:0,shutter:new Array(N).fill(0),revT:new Array(N).fill(null),peds:[],res,n0:nightF,done:false,cut:false,end:0,hold:0,fast:false};
   // 通行人は最初から通りにいて、ゆっくり歩いている（お店の前で急に出てこない）
   let g=0;
@@ -908,7 +909,7 @@ function makeCard(info){
   const C=document.createElement('canvas');C.width=1200;C.height=630;const c=C.getContext('2d');
   c.fillStyle='#F7F1E3';c.fillRect(0,0,1200,630);
   c.textBaseline='alphabetic';c.textAlign='left';
-  c.fillStyle='#7A6F62';c.font='500 22px "M PLUS 1 Code",monospace';c.fillText('11月1日　午前6時　朝の見回り',56,66);
+  c.fillStyle='#7A6F62';c.font='400 22px "Zen Kaku Gothic New",sans-serif';c.fillText('11月1日　午前6時　朝の見回り',56,66);
   c.fillStyle='#8E2A24';let fs=58;c.font=`500 ${fs}px "Kiwi Maru",serif`;while(c.measureText(info.title).width>760&&fs>36){fs-=2;c.font=`500 ${fs}px "Kiwi Maru",serif`}c.fillText(info.title,56,136);
   c.fillStyle='#2A2622';c.font='700 24px "Zen Kaku Gothic New",sans-serif';
   c.fillText(`${SIZE_NAME[N]}（${N}軒）・${mode==='rush'?'大急ぎ':'じっくり'}　飾った ${info.deco}個・片付け忘れ ${info.left}・白い電飾 ${info.lw}/${lights.length}`,56,180);
@@ -917,7 +918,7 @@ function makeCard(info){
   const rows=N<=4?[[0,N-1]]:[[0,N/2-1],[N/2,N-1]],top=210,area=340,gap=12,rh=(area-(rows.length-1)*gap)/rows.length;
   rows.forEach(([a,b],r)=>{const ww=(b-a+1)*420+40,s=Math.min(1088/ww,rh/430),w=ww*s;drawStreetRow(c,a,b,(1200-w)/2,top+r*(rh+gap)+(rh-430*s)/2,s)});
   c.textAlign='left';c.fillStyle='#2A2622';c.font='500 30px "Kiwi Maru",serif';c.fillText('一晩で模様替え',56,600);
-  c.textAlign='right';c.fillStyle='#7A6F62';c.font='500 20px "M PLUS 1 Code",monospace';c.fillText(SHARE_URL.replace(/^https?:\/\//,'').replace(/\/$/,'')+'　#'+HASHTAG,1144,597);
+  c.textAlign='right';c.fillStyle='#7A6F62';c.font='400 20px "Zen Kaku Gothic New",sans-serif';c.fillText(SHARE_URL.replace(/^https?:\/\//,'').replace(/\/$/,'')+'　#'+HASHTAG,1144,597);
   return C;
 }
 let cardFile=null,cardURL=null,shareText='';
@@ -927,6 +928,14 @@ function prepareShare(info){
   shareText=`【${info.title}】${SIZE_NAME[N]}（${N}軒）を一晩で模様替えして${info.score}点。`+(funny?`\n通りの声「${funny.say}」`:'')+`\n#${HASHTAG}\n${SHARE_URL}`;
   $('#rX').href='https://x.com/intent/post?text='+encodeURIComponent(shareText);
   cardFile=null;if(cardURL){URL.revokeObjectURL(cardURL);cardURL=null}
+  // 日本語の書体は文字ごとに分けて読み込まれるので、カードに描く文字を先に読み込んでから描く
+  const txt=info.title+'11月1日午前6時朝の見回り点飾った個片付け忘れ白い電飾大急ぎじっくり一晩で模様替え'+SIZE_NAME[N]+'（）軒・ケーキ予約受付中限定0123456789/'+Object.values(TYPES).map(t=>t.name).join('')+SHARE_URL;
+  const fonts=['500 40px "Kiwi Maru"','700 40px "Zen Kaku Gothic New"','400 40px "Zen Kaku Gothic New"','500 40px "M PLUS 1 Code"','700 40px "M PLUS 1 Code"'];
+  const ready=document.fonts&&document.fonts.load?Promise.all(fonts.map(f=>document.fonts.load(f,txt).catch(()=>{}))):Promise.resolve();
+  const token=prepareShare.n=(prepareShare.n||0)+1;
+  Promise.race([ready,new Promise(r=>setTimeout(r,2500))]).then(()=>{if(token!==prepareShare.n)return;drawCardNow(info)});
+}
+function drawCardNow(info){
   const C=makeCard(info);
   C.toBlob(b=>{if(!b)return;cardFile=new File([b],'hitoban-moyougae.png',{type:'image/png'});cardURL=URL.createObjectURL(b);$('#shareImg').src=cardURL;$('#saveImg').href=cardURL},'image/png');
 }
@@ -1100,6 +1109,8 @@ function frame(now){
   requestAnimationFrame(frame);
 }
 resize();toTitle();requestAnimationFrame(frame);
+/* 看板の店名などキャンバスに描く文字も、先に書体を読み込んでおく */
+if(document.fonts&&document.fonts.load){const t=Object.values(TYPES).map(t=>t.name).join('')+'ケーキ予約受付中限定本日の営業は終了しました';['500 24px "Kiwi Maru"','700 15px "Zen Kaku Gothic New"','500 10px "Zen Kaku Gothic New"'].forEach(f=>document.fonts.load(f,t+'0123456789').catch(()=>{}))}
 })();
 </script>
 </body>
